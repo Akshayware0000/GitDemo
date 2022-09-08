@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Loan Dept]" guice-stage="DEVELOPMENT">
+  <parameter name="URL" value="www.medrine.com"/>
+  <listeners>
+    <listener class-name="test1Practice.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="car loan(failed)">
+    <classes>
+      <class name="test1Practice.CarLoan">
+        <methods>
+          <include name="Bfrclass"/>
+          <include name="UsedCarsLoan"/>
+          <include name="AftrClass"/>
+        </methods>
+      </class> <!-- test1Practice.CarLoan -->
+    </classes>
+  </test> <!-- car loan(failed) -->
+</suite> <!-- Failed suite [Loan Dept] -->
